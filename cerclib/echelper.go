@@ -10,7 +10,7 @@ import (
 
 type EcRevoerFeilds struct {
 	EthAddress        string `form:"eth_address" json:"eth_address" binding:"required"`
-	EthereumSignature string `from:"eth_signature" json:"eth_signature" binding:"required"`
+	EthereumSignature string `form:"eth_signature" json:"eth_signature" binding:"required"`
 	Msg               string `form:"msg" json:"msg"`
 }
 
